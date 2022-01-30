@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>HTML Documentation</h1>
+        <ul>
+          <li>
+            <a href="#Getting_started_with_HTML" class="nav-link"
+              >Getting started with HTML</a
+            >
+          </li>
+          <li><a href="#What_is_HTML?" class="nav-link">What is HTML?</a></li>
+          <li>
+            <a href="#Anatomy_of_an_HTML_element" class="nav-link"
+              >Anatomy of an HTML element</a
+            >
+          </li>
+          <li><a href="#Attributes" class="nav-link">Attributes</a></li>
+          <li>
+            <a href="#Anatomy_of_an_HTML_document" class="nav-link"
+              >Anatomy of an HTML document</a
+            >
+          </li>
+          <li><a href="#HTML_Comments" class="nav-link">HTML comments</a></li>
+          <li><a href="#Summary" class="nav-link">Summary</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-doc">
+      <section class="main-section" id="Getting_started_with_HTML">
+        <h1>Getting started with HTML</h1>
+        <p>
+          In this article we cover the absolute basics of HTML. To get you
+          started, this article defines elements, attributes, and all the other
+          important terms you may have heard. It also explains where these fit
+          into HTML. You will learn how HTML elements are structured, how a
+          typical HTML page is structured, and other important basic language
+          features. Along the way, there will be an opportunity to play with
+          HTML too!
+        </p>
+      </section>
+      <section class="main-section" id="What_is_HTML?">
+        <h2>What is HTML?</h2>
+        <p>
+          HTML (Hypertext Markup Language) is not a programming language. It is
+          a markup language that tells web browsers how to structure the web
+          pages you visit. It can be as complicated or as simple as the web
+          developer wants it to be. HTML consists of a series of elements, which
+          you use to enclose, wrap, or mark up different parts of content to
+          make it appear or act in a certain way. The enclosing tags can make
+          content into a hyperlink to connect to another page, italicize words,
+          and so on. For example, consider the following line of text:
+        </p>
+        <code>My cat is very grumpy</code>
+        <p>
+          If we wanted the text to stand by itself, we could specify that it is
+          a paragraph by enclosing it in a paragraph (&lt;p&gt;) element:
+        </p>
+        <code>&lt;p&gt;My cat is very grumpy&lt;p&gt;</code>
+      </section>
+      <section class="main-section" id="Anatomy_of_an_HTML_element">
+        <h2>Anatomy of an HTML element</h2>
+        <img
+          src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png"
+          alt="Anatomy of an HTML document"
+        />
+        <p>The anatomy of our element is:</p>
+        <ul>
+          <li>
+            The opening tag: This consists of the name of the element (in this
+            example, p for paragraph), wrapped in opening and closing angle
+            brackets. This opening tag marks where the element begins or starts
+            to take effect. In this example, it precedes the start of the
+            paragraph text.
+          </li>
+          <li>
+            The content: This is the content of the element. In this example, it
+            is the paragraph text.
+          </li>
+          <li>
+            The closing tag: This is the same as the opening tag, except that it
+            includes a forward slash before the element name. This marks where
+            the element ends. Failing to include a closing tag is a common
+            beginner error that can produce peculiar results.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Attributes">
+        <h2>Attributes</h2>
+        <img
+          src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png"
+          alt="attributes explanation"
+        />
+        <p>
+          Attributes contain extra information about the element that won't
+          appear in the content. In this example, the
+          <code>class</code> attribute is an identifying name used to target the
+          element with style information.
+        </p>
+      </section>
+      <section class="main-section" id="Anatomy_of_an_HTML_document">
+        <h2>Anatomy of an HTML document</h2>
+        <p>
+          Individual HTML elements aren't very useful on their own. Next, let's
+          examine how individual elements combine to form an entire HTML page:
+        </p>
+        <pre>
+          <code
+            >
+            &lt;!DOCTYPE html&gt; 
+             &lt;html&gt; 
+                &lt;head&gt;
+                   &lt;meta charset="utf-8" /&gt; 
+                   &lt;title&gt;
+                   My test page 
+                   &lt;/title&gt;
+               &lt;/head&gt; 
+           
+               &lt;body&gt; 
+                   &lt;p&gt; This is my page &lt;/p&gt;
+               &lt;/body&gt;
+             &lt;/html&gt;
+          </code>
+        </pre>
+      </section>
+      <section class="main-section" id="HTML_Comments">
+        <h2>HTML Comments</h2>
+        <p>
+          HTML has a mechanism to write comments in the code. Browsers ignore
+          comments, effectively making comments invisible to the user. The
+          purpose of comments is to allow you to include notes in the code to
+          explain your logic or coding. This is very useful if you return to a
+          code base after being away for long enough that you don't completely
+          remember it. Likewise, comments are invaluable as different people are
+          making changes and updates.
+        </p>
+        <p>
+          To write an HTML comment, wrap it in the special markers &lt;!-- and
+          --&gt;
+        </p>
+      </section>
+      <section class="main-section" id="Summary">
+        <h2>Summary</h2>
+        <p>
+          You made it to the end of the article! We hope you enjoyed your tour
+          of the basics of HTML.
+        </p>
 
+        <p>
+          At this point, you should understand what HTML looks like, and how it
+          works at a basic level. You should also be able to write a few
+          elements and attributes. The subsequent articles of this module go
+          further on some of the topics introduced here, as well as presenting
+          other concepts of the language.
+        </p>
+      </section>
+      <div class="footer">
+        <h2>Reference</h2>
+        <p>
+          All the documentation in this page is taken from
+          <a
+            class="reference"
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+            >mdn</a
+          >
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
