@@ -29,3 +29,7 @@ function factorialize(num) {
 console.log(factorialize(5));
 
 ---
+//using multiple ternary operator
+  
+ return num > 0 ? num*factorialize(num - 1) 
+         : num == 0 ? 1 : undefined;
