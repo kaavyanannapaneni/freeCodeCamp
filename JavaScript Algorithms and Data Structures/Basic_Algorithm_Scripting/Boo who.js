@@ -6,3 +6,12 @@ function booWho(bool) {
 }
 
 console.log(booWho(1));
+
+
+---
+  
+  function booWho(bool) {
+  return typeof bool === "boolean";
+}
+
+console.log(booWho(null));
